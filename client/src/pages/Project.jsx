@@ -27,11 +27,11 @@ export default function Project() {
           <h5 className='mt-3'>Project Status</h5>
           <p className='lead'>{data.project.status}</p>
 
-          <ClientInfo client={data.project.client} />
+          <ClientInfo client={data.project.client}></ClientInfo>
 
-          <EditProjectForm project={data.project} />
+          <EditProjectForm project={data.project}></EditProjectForm>
 
-          <DeleteProjectButton projectId={data.project.id} />
+          <DeleteProjectButton projectId = {data.project.id}></DeleteProjectButton>
         </div>
       )}
     </>
